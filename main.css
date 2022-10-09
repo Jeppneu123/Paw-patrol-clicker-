@@ -208,7 +208,7 @@ body.night
 .text-under-paw-patrol
 {
     position: relative;
-    right: 5%;
+    right: 4.5%;
 }
 /* Positioning of the text */
 #dog-cookie-total
@@ -245,7 +245,3 @@ hr {
     z-index: -1;
 }
 
-#picture-behind-goal.show
-{
-
-}
