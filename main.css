@@ -1,0 +1,251 @@
+/* Inspiration til at komme i gang: https://www.youtube.com/watch?v=4yA3h0TMvpo */
+body
+{
+    background-image: url("Background.webp ") ;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Tahoma;
+    font-size: 150%;
+}
+
+h1
+{
+    font-size: 200%;
+}
+
+
+/* How to play */
+
+#introduction
+{
+    border-radius: 20px;
+    padding: 15px;
+    width: 80%;
+    margin-left: 5%;
+    background-color: green;
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 100%;
+    opacity: 0.65;
+}
+
+/* Div */
+
+#top-part
+{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    max-width: 100%;
+}
+
+#middle-part
+{
+    text-align: center;
+    margin: 20px;
+}
+
+#bottom-part
+{
+    text-align: center;
+    margin: 5px;
+}
+
+/* Buttons. Fra en af mine gamle opgave, kan ikke huske hvor jeg fandt det */
+/* https://simplestepscode.com/css-glass-button-tutorial/ */
+.nice-button
+{
+    /* Background styles */
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: darkgreen;
+    background-image: linear-gradient(lightblue,green);
+
+
+    /* Text styles */
+    text-decoration: none;
+    color: green;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+    text-shadow: 1px -1px blue;
+}
+
+.nice-button:after
+{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 40px;
+    width: calc(100% - 4px);
+    height: 50%;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+
+}
+.nice-button:hover
+{
+    background: linear-gradient(#073,#0fa);
+    cursor: pointer;
+}
+
+.nice-button:active
+{
+    transform: scale(.97);
+}
+
+/* Picture */
+
+#dog-cookie-img
+{
+
+    margin-bottom: 20px;
+    margin-top: 10px ;
+    cursor: pointer;
+    position: relative;
+    right:3%;
+}
+
+#dog-cookie-img:active
+{
+    transform: scale(.92);
+}
+
+#dog-cookie-img.show
+{
+    image: url(" Rubble-58b89ffd3df78c353cd095eb-removebg-preview.png");
+}
+
+/* Top buttons */
+.add-by-one-btn
+{
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.add-by-one-btn.show
+{
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.dog-bone-btn
+{
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.dog-bone-btn.show
+{
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.auto-click-btn
+{
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.auto-click-btn.show
+{
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Transitions */
+#auto-clicker
+{
+    transition: 0.3s;
+}
+
+#dog-bone-auto-clicker
+{
+    transition: 0.3s;
+}
+
+#add-one-extra-click
+{
+    transition: 0.3s;
+}
+/* Day/Night Mode */
+body.night
+{
+    background-color: darkcyan;
+    color: black;
+}
+
+.btn
+{
+    color: black;
+}
+
+.btn.night
+{
+    color: white;
+}
+
+
+.day-night-toggle-btn
+{
+    position: absolute;
+
+    right: 49.5%;
+
+}
+
+/* Positioning of the text */
+.text-under-paw-patrol
+{
+    position: relative;
+    right: 5%;
+}
+/* Positioning of the text */
+#dog-cookie-total
+{
+    position: relative;
+    right: 2px;
+}
+/* Hr design */
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, green, blue, black);
+    box-shadow: #00ffaa;
+    opacity: 0.2;
+}
+
+/* Goal button */
+.next-goal
+{
+    margin-right: 5.5%;
+    float: right;
+    text-align: end;
+    align-items: center;
+
+}
+
+#picture-behind-goal
+{
+    opacity: 0.3;
+    float: right;
+    position: absolute;
+    left:81%;
+    top: 75%;
+    z-index: -1;
+}
+
+#picture-behind-goal.show
+{
+
+}
